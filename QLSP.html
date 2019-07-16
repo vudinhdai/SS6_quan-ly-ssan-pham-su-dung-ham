@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <style>
+        .button {
+            color: #3804ff;
+            background: #09b59b;
+            width: 70px;
+            height:30px;
+            font-size: 20px;
+            border-radius: 7px;
+        }
+
+        .class1 {
+            background: #f2f2f2;
+        }
+
+        .txt {
+            width: 600px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 20px
+        }
+    </style>
+</head>
+<body onload="run()">
+<form>
+    <div>
+        <h3><b>Add New Product</b></h3>
+    </div>
+    <div style="width: 750px;height: 150px;background: #f2efec">
+        <input id="newproduct" placeholder="New Product" type="text" class="txt">
+        <input id="add" class="button" type="button" value="Add" onclick="addNewProduct()"
+               style="margin-left: 15px;margin-top: 15px">
+    </div>
+    <div>
+        <h3><b>Display All Product</b></h3>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td width="950px">
+                    <h4><b>Product Name</b></h4>
+                </td>
+                <td>
+                    <b><p id="value" style="color: #ff2239"></p></b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table id="allproducts"></table>
+    <div id="editform" style="width: 700px;height: 125px" class="editform"></div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
